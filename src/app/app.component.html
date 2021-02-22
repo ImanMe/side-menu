@@ -1,15 +1,10 @@
+<app-top-menu></app-top-menu>
 <div class="d-flex h-100 bg-warning">
   <div class="h-100" class="sidenav-custom" [ngClass]="isMenuVisible ? 'menu-width' : 'no-menu-width'">
-    <ul class="list-group">
-      <li class="list-group-item">Cras justo odio</li>
-      <li class="list-group-item">Dapibus ac facilisis in</li>
-      <li class="list-group-item">Morbi leo risus</li>
-      <li class="list-group-item">Porta ac consectetur ac</li>
-      <li class="list-group-item">Vestibulum at eros</li>
-    </ul>
+    <app-side></app-side>
   </div>
   <div class="h-100 bg-info" (click)="toggle()">
-    <button class="btn btn-secondary">Toggle</button>
+    <button class="shadow-none btn btn-light" style="border-radius: 0; color: #001f33;"><i class="fa fa-bars"></i></button>
   </div>
   <div class="p-2 bg-primary flex-grow-1 h-100">
     <div class="container">

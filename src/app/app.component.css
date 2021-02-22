@@ -34,7 +34,19 @@
   transition: 0.5s;
 }
 
-ul>li {
-  white-space: nowrap;
-  background-color: transparent;
+.bg-warning {
+  background-color: #00263e !important
+}
+
+
+.bg-primary {
+  background-color: white !important
+}
+
+.bg-info {
+  background-color: white !important
+}
+
+.bg-dark {
+  background-color: #002f4d !important
 }

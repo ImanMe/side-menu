@@ -1,0 +1,38 @@
+ul>li {
+  white-space: nowrap;
+  /* background-color: transparent; */
+  list-style-type: none;
+  cursor: pointer;
+  color: white;
+  font-size: small;
+
+}
+
+.parent-li {
+  background-color: #002f4d;
+}
+
+.child-li {
+  background-color: #001f33;
+}
+
+li.list-group-item {}
+
+.selected-parent {
+  border-bottom: none;
+}
+
+.sub-list {
+  padding-left: 2rem;
+}
+
+.sub-item {
+  font-size: xx-small;
+
+}
+
+.active-li {
+  /* background-color: #003f66; */
+  background-color: #002f4d;
+  font-weight: bold;
+}

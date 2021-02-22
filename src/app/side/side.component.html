@@ -1,0 +1,91 @@
+<ul class="list-group p-2 parent-ul">
+  <li class="list-group-item selected-parent list-group-item d-flex justify-content-between align-items-center"
+    [class.parent-li]="!isFdOpen" [class.active-li]="isFdOpen" (click)="toggleFd()">
+    FinanceDriver
+    <i class="fa" [class.fa-angle-down]="!isFdOpen" [class.fa-angle-up]="isFdOpen" aria-hidden="true"></i>
+  </li>
+  <li [hidden]="!isFdOpen">
+    <ul class="list-group child-ul">
+      <li class="list-group-item child-li">Link List</li>
+      <li class="list-group-item child-li">List Identification</li>
+      <li class="list-group-item child-li">Dealer level Information</li>
+      <li class="list-group-item child-li">Form Options</li>
+      <li class="list-group-item child-li">Prequalification Criteria</li>
+      <li class="list-group-item child-li">Asset Preferences</li>
+      <li class="list-group-item child-li">Dealer Privacy Notice</li>
+      <li class="list-group-item child-li">CEM Consent</li>
+      <li class="list-group-item child-li">Disclosure & Privacy Notice</li>
+      <li class="list-group-item child-li">Confirmation Page Content</li>
+      <li class="list-group-item child-li">Auto Response Emails</li>
+      <li class="list-group-item child-li">Notification & Routing</li>
+      <li class="list-group-item child-li">ADF Lead Posting</li>
+    </ul>
+  </li>
+  <li (click)="toggleAdf()" class="list-group-item  d-flex justify-content-between align-items-center"
+    [class.parent-li]="!isAdfOpen" [class.active-li]="isAdfOpen">
+
+    ADF
+    <i class="fa" [class.fa-angle-down]="!isAdfOpen" [class.fa-angle-up]="isAdfOpen" aria-hidden="true"></i>
+  <li [hidden]="!isAdfOpen">
+    <ul class="list-group child-ul">
+      <li class="list-group-item child-li">ADF Provider</li>
+    </ul>
+  </li>
+  <li (click)="togglePd()" class="list-group-item d-flex justify-content-between align-items-center"
+    [class.parent-li]="!isPdOpen" [class.active-li]="isPdOpen">
+
+    PaymentDriver
+    <i class="fa" [class.fa-angle-down]="!isPdOpen" [class.fa-angle-up]="isPdOpen" aria-hidden="true"></i>
+  <li [hidden]="!isPdOpen">
+    <ul class="list-group child-ul">
+      <li class="list-group-item child-li">General Settings</li>
+      <li class="list-group-item child-li">Lenders</li>
+      <li class="list-group-item child-li">Payment Options</li>
+      <li class="list-group-item child-li">Other Payment Settings</li>
+      <li class="list-group-item child-li">Dealer Fees</li>
+    </ul>
+  </li>
+  <li (click)="toggleSmd()" class="list-group-item d-flex justify-content-between align-items-center"
+    [class.parent-li]="!isSmdOpen" [class.active-li]="isSmdOpen">
+
+    Save My Deal
+    <i class="fa" [class.fa-angle-down]="!isSmdOpen" [class.fa-angle-up]="isSmdOpen" aria-hidden="true"></i>
+  <li [hidden]="!isSmdOpen">
+    <ul class="list-group child-ul">
+      <li class="list-group-item child-li">Save My Deal Admin</li>
+    </ul>
+  </li>
+  <li (click)="togglePrd()" class="list-group-item d-flex justify-content-between align-items-center"
+    [class.parent-li]="!isPrdOpen" [class.active-li]="isPrdOpen">
+
+    ProtectionDriver
+    <i class="fa" [class.fa-angle-down]="!isPrdOpen" [class.fa-angle-up]="isPrdOpen" aria-hidden="true"></i>
+  <li [hidden]="!isPrdOpen">
+    <ul class="list-group child-ul">
+      <li class="list-group-item child-li">Custom protection Products</li>
+      <li class="list-group-item child-li">Pricing Option Sets</li>
+    </ul>
+  </li>
+  <li (click)="toggleTd()" class="list-group-item d-flex justify-content-between align-items-center"
+    [class.parent-li]="!isTdOpen" [class.active-li]="isTdOpen">
+
+    TradeDriver
+    <i class="fa" [class.fa-angle-down]="!isTdOpen" [class.fa-angle-up]="isTdOpen" aria-hidden="true"></i>
+  <li [hidden]="!isTdOpen">
+    <ul class="list-group child-ul">
+      <li class="list-group-item child-li">Dealer Settings</li>
+      <li class="list-group-item child-li">Trade Value Adjustments</li>
+    </ul>
+  </li>
+  <li (click)="toggleRin()" class="list-group-item d-flex justify-content-between align-items-center"
+    [class.parent-li]="!isRinOpen" [class.active-li]="isRinOpen">
+
+    Reserve It Now
+    <i class="fa" [class.fa-angle-down]="!isRinOpen" [class.fa-angle-up]="isRinOpen" aria-hidden="true"></i>
+  <li [hidden]="!isRinOpen">
+    <ul class="list-group child-ul">
+      <li class="list-group-item child-li">Stripe Account</li>
+      <li class="list-group-item child-li">Settings</li>
+    </ul>
+  </li>
+</ul>
